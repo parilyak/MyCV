@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleVC1" customModule="MyCV" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AH.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XnQ-TA-kLb">
+                    <rect key="frame" x="12" y="32" width="351" height="271"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AHYLP.png" translatesAutoresizingMaskIntoConstraints="NO" id="h3z-DS-S9q">
+                    <rect key="frame" x="0.0" y="311" width="375" height="209"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="209" id="WXF-GC-Iif"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XnQ-TA-kLb" firstAttribute="centerX" secondItem="h3z-DS-S9q" secondAttribute="centerX" id="TQb-1U-792"/>
+                <constraint firstItem="h3z-DS-S9q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UIc-je-gFo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h3z-DS-S9q" secondAttribute="bottom" constant="147" id="aLu-p9-YzG"/>
+                <constraint firstAttribute="trailing" secondItem="h3z-DS-S9q" secondAttribute="trailing" id="cMa-YV-1ik"/>
+                <constraint firstItem="h3z-DS-S9q" firstAttribute="top" secondItem="XnQ-TA-kLb" secondAttribute="bottom" constant="8" symbolic="YES" id="nH2-u3-Dln"/>
+                <constraint firstItem="XnQ-TA-kLb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="sFn-aZ-0l4"/>
+                <constraint firstItem="XnQ-TA-kLb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="sfE-Wc-lYw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AH.jpg" width="960" height="531"/>
+        <image name="AHYLP.png" width="367" height="153"/>
+    </resources>
+</document>
